@@ -6,4 +6,4 @@ var apiRoutes = require("./app/routing/apiRouting");
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
